@@ -246,14 +246,14 @@ address { font-style: normal; }
   display: flex; flex-direction: column; justify-content: center;
   padding: 130px 0 90px; overflow: hidden; isolation: isolate;
 }
-.hero-bg, .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero-bg, .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; z-index: -2; }
 .hero-bg img { animation: heroZoom 12s ease-in-out infinite alternate; }
 @keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
 
 .hero-veil {
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(100deg, rgba(250, 250, 246, .96) 0%, rgba(250, 250, 246, .88) 34%, rgba(240, 248, 243, .55) 55%, rgba(210, 235, 220, .22) 74%, rgba(180, 220, 200, .18) 100%),
+    linear-gradient(100deg, rgba(246, 250, 247, .97) 0%, rgba(244, 250, 246, .91) 40%, rgba(228, 243, 234, .62) 60%, rgba(198, 226, 210, .30) 78%, rgba(172, 208, 188, .26) 100%),
     linear-gradient(to top, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 26%);
 }
 
@@ -741,8 +741,8 @@ address { font-style: normal; }
 .cta-overlay {
   position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(180deg, rgba(4,40,23,.78), rgba(4,40,23,.62) 45%, rgba(4,40,23,.85)),
-    radial-gradient(900px 480px at 50% 45%, rgba(8,92,54,.28), transparent 70%);
+    linear-gradient(180deg, rgba(4,40,23,.70), rgba(4,40,23,.54) 45%, rgba(4,40,23,.78)),
+    radial-gradient(900px 480px at 50% 45%, rgba(8,92,54,.22), transparent 70%);
 }
 
 .cta-content {
