@@ -246,15 +246,21 @@ address { font-style: normal; }
   display: flex; flex-direction: column; justify-content: center;
   padding: 130px 0 90px; overflow: hidden; isolation: isolate;
 }
-.hero-bg, .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; z-index: -2; }
+.hero-bg, .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; z-index: -2; filter: saturate(1.15) contrast(1.05) brightness(1.10);}
 .hero-bg img { animation: heroZoom 12s ease-in-out infinite alternate; }
 @keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
 
 .hero-veil {
   position: absolute; inset: 0; z-index: -1;
-  background:
-    linear-gradient(100deg, rgba(246, 250, 247, .97) 0%, rgba(244, 250, 246, .91) 40%, rgba(228, 243, 234, .62) 60%, rgba(198, 226, 210, .30) 78%, rgba(172, 208, 188, .26) 100%),
-    linear-gradient(to top, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 26%);
+ background:
+  linear-gradient(100deg, 
+    rgba(246, 250, 247, .96) 0%, 
+    rgba(244, 250, 246, .88) 25%, 
+    rgba(228, 243, 234, .40) 45%, 
+    rgba(198, 226, 210, .10) 65%, 
+    rgba(172, 208, 188, 0) 80%
+  ),
+  linear-gradient(to top, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 20%);
 }
 
 .hero-inner {
@@ -741,7 +747,7 @@ address { font-style: normal; }
 .cta-overlay {
   position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(180deg, rgba(4,40,23,.70), rgba(4,40,23,.54) 45%, rgba(4,40,23,.78)),
+    linear-gradient(180deg, rgba(4, 40, 23, 0.459), rgba(4,40,23,.54) 45%, rgba(4,40,23,.78)),
     radial-gradient(900px 480px at 50% 45%, rgba(8,92,54,.22), transparent 70%);
 }
 
