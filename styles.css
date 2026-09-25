@@ -134,7 +134,7 @@ address { font-style: normal; }
 }
 .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 16px 32px rgba(232, 169, 61, .48); }
 
-.btn-outline { border-color: var(--green-600); color: var(--green-700); background: transparent; }
+.btn-outline { border-color: var(--green-600); color: var(--green-700); background: rgba(253, 253, 253, 0.685); }
 .btn-outline:hover { background: var(--green-700); color: #fff; transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
 .btn-ghost-light { border-color: rgba(255,255,255,.55); color: #fff; background: rgba(255,255,255,.06); }
