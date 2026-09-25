@@ -108,11 +108,12 @@
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover; object-position: 50% 40%;
+  object-position: center bottom;
   z-index: -2;
 }
 .why-veil {
   position: absolute; inset: 0; z-index: -1;
-  background: linear-gradient(160deg, rgba(4, 40, 23, .93), rgba(6, 55, 31, .86) 55%, rgba(8, 92, 54, .8));
+  background: linear-gradient(160deg, rgba(4, 40, 23, .93), rgba(6, 55, 31, 0.727) 55%, rgba(8, 92, 54, 0.514));
 }
 .why-inner { position: relative; }
 .why-title {
