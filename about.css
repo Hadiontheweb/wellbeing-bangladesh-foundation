@@ -1,0 +1,378 @@
+/* ============================================================
+   Wellbeing Bangladesh Foundation — About Page Styles
+   (loads after styles.css; homepage rules untouched)
+   ============================================================ */
+
+/* ---------- Active nav state ---------- */
+.main-nav a.active {
+  color: var(--green-700);
+  font-weight: 700;
+}
+
+/* ---------- Page hero ---------- */
+.page-hero {
+  position: relative;
+  min-height: clamp(480px, 62vh, 640px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  isolation: isolate;
+}
+.page-hero-bg, .page-hero-bg img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 38%;
+  z-index: -2;
+}
+.page-hero-bg img { animation: heroZoom 14s ease-in-out infinite alternate; }
+.page-hero-veil {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(165deg, rgba(4, 40, 23, .88) 0%, rgba(6, 55, 31, 0.751) 48%, rgba(8, 92, 54, 0) 100%),
+    linear-gradient(to top, rgba(4, 40, 23, .55) 0%, rgba(4, 40, 23, 0) 40%);
+}
+.page-hero-inner {
+  padding: 170px 0 84px;
+  color: #fff;
+}
+.crumb {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .82rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: rgba(255, 255, 255, .78);
+  margin-bottom: 20px;
+}
+.crumb a { color: rgba(255, 255, 255, .92); text-decoration: none; }
+.crumb a:hover { color: var(--gold-400); }
+.page-hero-title {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.16; letter-spacing: -.015em;
+  max-width: 880px; margin-bottom: 18px;
+  text-wrap: balance;
+}
+.page-hero-title em { font-style: normal; color: var(--gold-400); }
+.page-hero-sub {
+  font-size: clamp(.98rem, 1.4vw, 1.1rem);
+  line-height: 1.75; color: #D9EBDF;
+  max-width: 700px;
+}
+
+/* ---------- Story / Who We Are / Philosophy shared split ---------- */
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.02fr .98fr;
+  gap: clamp(40px, 6vw, 72px);
+  align-items: center;
+}
+.story-copy p { color: var(--slate); line-height: 1.85; margin-bottom: 16px; font-size: .97rem; }
+.story-copy strong { color: var(--green-900); }
+
+.story-media { position: relative; margin: 0; }
+.story-media img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+.story-media::before {
+  content: "";
+  position: absolute;
+  right: -16px; bottom: -16px;
+  width: 130px; height: 130px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(232, 169, 61, .38), rgba(56, 163, 216, .26));
+  z-index: -1;
+  filter: blur(1px);
+}
+.story-media::after {
+  content: "";
+  position: absolute;
+  left: -18px; top: -18px;
+  width: 92px; height: 92px;
+  border: 2px dashed rgba(10, 123, 75, .35);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.who-band { background: var(--green-50); }
+
+/* ---------- Why We Exist band ---------- */
+.why-band {
+  position: relative; overflow: hidden; isolation: isolate;
+  padding: clamp(96px, 12vw, 150px) 0;
+  text-align: center; color: #fff;
+}
+.why-bg, .why-bg img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 40%;
+  z-index: -2;
+}
+.why-veil {
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(160deg, rgba(4, 40, 23, .93), rgba(6, 55, 31, .86) 55%, rgba(8, 92, 54, .8));
+}
+.why-inner { position: relative; }
+.why-title {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(1.6rem, 3.3vw, 2.45rem);
+  line-height: 1.22; letter-spacing: -.01em;
+  max-width: 860px; margin: 14px auto 18px;
+  text-wrap: balance;
+}
+.why-sub {
+  max-width: 760px; margin: 0 auto;
+  color: #D9EBDF; line-height: 1.85;
+  font-size: clamp(.96rem, 1.3vw, 1.05rem);
+}
+
+/* ---------- Vision & Mission ---------- */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.vm-card {
+  border-radius: var(--radius-lg);
+  padding: clamp(34px, 4vw, 48px);
+  position: relative;
+  overflow: hidden;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.vm-card:hover { transform: translateY(-6px); }
+.vm-light {
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.vm-dark {
+  background: linear-gradient(150deg, #06371F 0%, #085C36 60%, #0A7B4B 100%);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+.vm-dark::after {
+  content: "";
+  position: absolute; right: -70px; top: -70px;
+  width: 210px; height: 210px;
+  border: 2px dashed rgba(255, 255, 255, .22);
+  border-radius: 50%;
+}
+.vm-ic {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; border-radius: 16px;
+  margin-bottom: 20px;
+}
+.vm-ic .ic { width: 26px; height: 26px; }
+.vm-light .vm-ic { background: var(--green-50); color: var(--green-600); }
+.vm-dark .vm-ic { background: rgba(255, 255, 255, .12); color: var(--gold-400); }
+.vm-eyebrow {
+  font-size: .78rem; font-weight: 800;
+  letter-spacing: .22em; text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.vm-light .vm-eyebrow { color: var(--green-600); }
+.vm-dark .vm-eyebrow { color: var(--gold-400); }
+.vm-card h3 {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.4; margin-bottom: 14px;
+  text-wrap: balance;
+}
+.vm-light h3 { color: var(--green-950); }
+.vm-text { line-height: 1.8; font-size: .96rem; }
+.vm-light .vm-text { color: var(--muted); }
+.vm-dark .vm-text { color: #D9EBDF; }
+
+/* ---------- Philosophy ripple chain ---------- */
+.philosophy { background: #fff; }
+.ripple-chain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  list-style: none;
+  padding: 0; margin: 28px 0 0;
+}
+.ripple-chain li {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 9px;
+  padding: 20px 10px;
+  background: var(--green-50);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  font-weight: 700; color: var(--green-900);
+  font-size: .92rem;
+}
+.ripple-chain li svg { width: 22px; height: 22px; color: var(--green-600); }
+.ripple-chain li:not(:last-child)::after {
+  content: "→";
+  position: absolute; right: -16px; top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold-500); font-weight: 800;
+  font-size: 1.1rem; z-index: 1;
+}
+
+/* ---------- Soft bands ---------- */
+.band-soft { background: var(--cream); }
+
+/* ---------- Development principles ---------- */
+.princ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  list-style: none; padding: 0; margin: 0;
+}
+.princ-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 26px;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.princ-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-100);
+}
+.princ-num {
+  display: block;
+  font-family: var(--font-head); font-weight: 800;
+  font-size: .78rem; letter-spacing: .18em;
+  color: var(--gold-600); margin-bottom: 10px;
+}
+.princ-item h3 {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: 1rem; line-height: 1.45;
+  color: var(--green-950);
+}
+
+/* ---------- Core beliefs ---------- */
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: clamp(40px, 5vw, 64px);
+  align-items: start;
+}
+.beliefs-intro p { color: var(--muted); line-height: 1.85; font-size: .97rem; }
+.belief-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  list-style: none; padding: 0; margin: 0;
+}
+.belief-list li {
+  display: flex; align-items: center; gap: 12px;
+  padding: 15px 18px;
+  background: var(--green-50);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-weight: 600; color: var(--slate);
+  font-size: .9rem; line-height: 1.5;
+}
+.belief-list .ic { width: 20px; height: 20px; color: var(--green-600); flex: none; }
+
+/* ---------- Core values ---------- */
+.values-grid {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 12px;
+  list-style: none; padding: 0; margin: 0;
+  max-width: 860px; margin-inline: auto;
+}
+.value-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 13px 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  font-weight: 700; color: var(--green-900);
+  font-size: .95rem;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.value-chip:hover {
+  transform: translateY(-3px);
+  border-color: var(--green-100);
+  box-shadow: var(--shadow-md);
+}
+.value-chip .ic { width: 19px; height: 19px; color: var(--gold-600); }
+
+/* ---------- Guiding principles ---------- */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  list-style: none; padding: 0; margin: 0;
+}
+.guide-tile {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px;
+  padding: 30px 18px;
+  background: var(--green-50);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  font-family: var(--font-head); font-weight: 700;
+  font-size: .98rem; color: var(--green-950);
+  text-align: center;
+  transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+}
+.guide-tile:hover {
+  transform: translateY(-4px);
+  background: #fff;
+  box-shadow: var(--shadow-md);
+}
+.guide-tile .ic {
+  width: 24px; height: 24px; color: var(--green-600);
+  padding: 9px; box-sizing: content-box;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+/* ---------- Our Promise ---------- */
+.promise {
+  position: relative; overflow: hidden; isolation: isolate;
+  min-height: clamp(480px, 52vw, 620px);
+  display: flex; align-items: center;
+  text-align: center; color: #fff;
+  padding: clamp(80px, 10vw, 120px) 0;
+}
+.promise-bg {
+  position: absolute; inset: 0; z-index: -2;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 42%;
+}
+.promise-veil {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(4, 40, 23, .70), rgba(4, 40, 23, .54) 45%, rgba(4, 40, 23, .78)),
+    radial-gradient(900px 480px at 50% 45%, rgba(8, 92, 54, .22), transparent 70%);
+}
+.promise-inner { position: relative; }
+.promise-title {
+  font-family: var(--font-head); font-weight: 700;
+  font-size: clamp(1.45rem, 2.9vw, 2.2rem);
+  line-height: 1.35; letter-spacing: -.01em;
+  max-width: 880px; margin: 14px auto 0;
+  text-wrap: balance;
+}
+.promise-title em { font-style: normal; color: var(--gold-400); }
+.promise-actions {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 14px; margin-top: 36px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .story-grid { grid-template-columns: 1fr; gap: 36px; }
+  .who-band .story-grid { display: flex; flex-direction: column-reverse; }
+  .beliefs-grid { grid-template-columns: 1fr; gap: 30px; }
+  .vm-grid { grid-template-columns: 1fr; }
+  .page-hero-inner { padding: 150px 0 70px; }
+}
+@media (max-width: 700px) {
+  .ripple-chain { grid-template-columns: 1fr 1fr; }
+  .ripple-chain li::after { display: none; }
+  .belief-list { grid-template-columns: 1fr; }
+}
