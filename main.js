@@ -4,6 +4,9 @@
 (function () {
   'use strict';
 
+  /* ---------- Flag JS availability (gates scroll-reveal CSS) ---------- */
+  document.documentElement.classList.add('js');
+
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -272,6 +275,26 @@
         });
         panels.forEach((p) => { p.hidden = p.dataset.panel !== id; });
       });
+    });
+  }
+
+  /* ---------- Contact form (client-side demo handler) ---------- */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    const successBox = document.getElementById('formSuccess');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (successBox) {
+        contactForm.hidden = true;
+        successBox.hidden = false;
+        successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+    const formReset = document.getElementById('formReset');
+    if (formReset) formReset.addEventListener('click', () => {
+      contactForm.reset();
+      contactForm.hidden = false;
+      if (successBox) successBox.hidden = true;
     });
   }
 })();
