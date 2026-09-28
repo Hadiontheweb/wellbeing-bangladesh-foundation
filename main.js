@@ -9,7 +9,7 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ---------- Sticky header — frosted glass past 50px ---------- */
-  const header = document.getElementById('siteHead' + 'er');
+  const header = document.getElementById('siteHeader');
   const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 50);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
