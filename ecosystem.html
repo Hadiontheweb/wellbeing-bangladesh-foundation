@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-hero">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecosystem — Wellbeing Bangladesh Foundation</title>
+  <meta name="description" content="One vision, multiple initiatives, shared purpose — the Wellbeing Bangladesh ecosystem of programmes, partners and communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=67" />
+  <link rel="stylesheet" href="pages.css?v=1" />
+  <link rel="icon" type="image/png" href="assets/logo-round.png" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-pill">
+      <a href="index.html" class="brand" aria-label="Wellbeing Impact Foundation — Home">
+        <img src="assets/logo-wide.png" alt="Wellbeing Impact Foundation" class="brand-logo-wide" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html">Framework</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="ecosystem.html" class="active" aria-current="page">Ecosystem</a>
+        <a href="programmes.html">Programmes</a>
+        <div class="nav-more" id="navMore">
+          <button type="button" id="moreBtn" aria-expanded="false" aria-controls="navDrop">
+            More
+            <svg viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-drop" id="navDrop">
+            <a href="index.html#impact">Impact</a>
+            <a href="index.html#news">News &amp; Insights</a>
+            <a href="index.html#focus">Focus Areas</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#join" class="btn btn-gold btn-sm nav-cta">Join Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= PAGE HERO ======================= -->
+    <section class="page-hero" aria-label="Ecosystem introduction">
+      <div class="page-hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1768592959322-659216ae87ea?q=80&w=1920&auto=format&fit=crop" alt="" fetchpriority="high" />
+      </div>
+      <div class="page-hero-veil" aria-hidden="true"></div>
+      <div class="container page-hero-inner">
+        <p class="crumb reveal" data-reveal><a href="index.html">Home</a><span aria-hidden="true">/</span>Ecosystem</p>
+        <h1 class="page-hero-title reveal" data-reveal>
+          One Vision. Multiple Initiatives. <em>Shared Purpose.</em>
+        </h1>
+        <p class="page-hero-sub reveal" data-reveal>
+          Wellbeing Bangladesh Foundation is more than a single organisation — it is a growing ecosystem of
+          programmes, partners, institutions and communities working toward one shared national goal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= THE FOUNDATION (parent) ======================= -->
+    <section class="section" id="foundation" aria-labelledby="found-title">
+      <div class="container story-grid">
+        <div class="story-copy reveal" data-reveal>
+          <header class="section-head">
+            <p class="section-eyebrow">The Foundation</p>
+            <h2 class="section-title" id="found-title">The Parent Institution</h2>
+          </header>
+          <p>
+            Wellbeing Bangladesh Foundation is the foundation of the entire ecosystem. It provides
+            <strong>vision, governance, philosophy and leadership</strong> — together with institutional systems,
+            strategic direction and quality assurance across every initiative.
+          </p>
+          <p>
+            From this foundation, specialised programmes grow — each focused on a distinct part of the
+            national wellbeing mission, each aligned to the Bangladesh Wellbeing Framework™.
+          </p>
+          <div class="vtag-row" style="margin-top:22px">
+            <span>Vision &amp; Governance</span><span>Philosophy</span><span>Institutional Systems</span><span>Strategic Direction</span><span>Quality Assurance</span>
+          </div>
+        </div>
+        <figure class="story-media reveal" data-reveal>
+          <img src="https://images.unsplash.com/photo-1744742518418-4552aa49c04f?auto=format&fit=crop&w=1000&q=75" alt="A father and son sharing a joyful moment in Bangladesh" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= INITIATIVES (tabs) ======================= -->
+    <section class="section band-soft" id="initiatives" aria-labelledby="init-title">
+      <div class="container">
+        <header class="section-head centered reveal" data-reveal>
+          <p class="section-eyebrow">Within the Ecosystem</p>
+          <h2 class="section-title" id="init-title">A Growing Family of Initiatives</h2>
+        </header>
+
+        <div class="vtabs" data-vtabs>
+          <div class="vtab-list" role="tablist" aria-label="Ecosystem initiatives">
+            <button type="button" class="vtab-btn on" data-tab="schools" aria-selected="true"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>Healthy Schools</button>
+            <button type="button" class="vtab-btn" data-tab="campus" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg>Healthy Campus</button>
+            <button type="button" class="vtab-btn" data-tab="workplace" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg>Healthy Workplace</button>
+            <button type="button" class="vtab-btn" data-tab="community" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-people"/></svg>Community Wellness</button>
+            <button type="button" class="vtab-btn" data-tab="women" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-flower"/></svg>Women Wellness</button>
+            <button type="button" class="vtab-btn" data-tab="youth" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-hands"/></svg>Youth Leadership</button>
+          </div>
+
+          <div class="vtab-panels">
+            <div class="vtab-panel" data-panel="schools">
+              <h3>Healthy School Initiative</h3>
+              <p>
+                Creating healthier schools where children learn, play and grow in nurturing environments.
+                We partner with schools across Bangladesh to embed wellbeing into daily school life —
+                from mindful mornings to teacher training and family engagement.
+              </p>
+              <div class="vtag-row"><span>Wellbeing Curriculum</span><span>Teacher Training</span><span>Play &amp; Movement</span><span>Parent Workshops</span></div>
+            </div>
+            <div class="vtab-panel" data-panel="campus" hidden>
+              <h3>Healthy Campus Initiative</h3>
+              <p>
+                Empowering university students with wellbeing skills, peer support networks and healthy campus
+                cultures — preparing the next generation to lead lives of purpose, balance and contribution.
+              </p>
+              <div class="vtag-row"><span>Peer Support</span><span>Mental Health Awareness</span><span>Leadership Labs</span><span>Campus Partnerships</span></div>
+            </div>
+            <div class="vtab-panel" data-panel="workplace" hidden>
+              <h3>Healthy Workplace Bangladesh</h3>
+              <p>
+                Transforming workplaces into spaces of productivity, balance and professional wellbeing.
+                We work with employers to build people-first cultures where teams and businesses thrive together.
+              </p>
+              <div class="vtag-row"><span>Workplace Assessments</span><span>Manager Training</span><span>Wellbeing Policy</span><span>Employee Programmes</span></div>
+            </div>
+            <div class="vtab-panel" data-panel="community" hidden>
+              <h3>Community Wellness Initiative</h3>
+              <p>
+                Mobilizing communities to design and lead their own journeys toward wellbeing — through local
+                leaders, volunteer networks and community-owned programmes that last.
+              </p>
+              <div class="vtag-row"><span>Community Champions</span><span>Volunteer Corps</span><span>Local Partnerships</span><span>Grassroots Events</span></div>
+            </div>
+            <div class="vtab-panel" data-panel="women" hidden>
+              <h3>Women Wellness Initiative</h3>
+              <p>
+                Advancing women's health, dignity and empowerment across every stage of life — from adolescent
+                health education to maternal wellbeing and women's economic participation.
+              </p>
+              <div class="vtag-row"><span>Health Education</span><span>Maternal Wellbeing</span><span>Skill Building</span><span>Support Circles</span></div>
+            </div>
+            <div class="vtab-panel" data-panel="youth" hidden>
+              <h3>Youth Leadership Academy</h3>
+              <p>
+                Developing the next generation of purpose-driven, compassionate young leaders — equipped with
+                the skills, values and confidence to transform their communities.
+              </p>
+              <div class="vtag-row"><span>Leadership Training</span><span>Mentorship</span><span>Service Projects</span><span>National Network</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= WHY AN ECOSYSTEM ======================= -->
+    <section class="section" id="why-ecosystem" aria-labelledby="whyeco-title">
+      <div class="container">
+        <header class="section-head centered reveal" data-reveal>
+          <p class="section-eyebrow">Our Approach</p>
+          <h2 class="section-title" id="whyeco-title">Why an Ecosystem?</h2>
+        </header>
+        <ol class="num-grid">
+          <li class="num-item reveal" data-reveal><span class="num-num">01</span><h3>Specialisation</h3><p>Each initiative focuses on a specific domain — allowing depth, quality and cultural fit in every setting we serve.</p></li>
+          <li class="num-item reveal" data-reveal><span class="num-num">02</span><h3>Shared Standards</h3><p>Every initiative follows the Framework™, shared training and common measurement — so quality never depends on place.</p></li>
+          <li class="num-item reveal" data-reveal><span class="num-num">03</span><h3>Collaboration</h3><p>Initiatives refer, learn and build on one another — a school connects to a campus, a campus to workplaces, workplaces to communities.</p></li>
+          <li class="num-item reveal" data-reveal><span class="num-num">04</span><h3>Scale with Soul</h3><p>The ecosystem grows through partners and local leaders — reaching more of Bangladesh without losing the human touch.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= CTA ======================= -->
+    <section class="cta-band" aria-labelledby="eco-cta-title">
+      <div class="cta-band-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1528726164383-33c4a223b78c?q=80&w=1920&auto=format&fit=crop" alt="" loading="lazy" />
+      </div>
+      <div class="cta-band-veil" aria-hidden="true"></div>
+      <div class="container cta-band-inner reveal" data-reveal>
+        <p class="section-eyebrow light">Take the Next Step</p>
+        <h2 class="cta-band-title" id="eco-cta-title">Join the <em>Ecosystem</em></h2>
+        <p class="cta-band-sub">
+          Whether as a partner, school, employer, volunteer or supporter — there is a place for you within
+          the Wellbeing Bangladesh ecosystem.
+        </p>
+        <div class="cta-band-actions">
+          <a href="index.html#partners" class="btn btn-gold btn-lg">Partner With Us</a>
+          <a href="index.html#join" class="btn btn-ghost-light btn-lg">Join the Movement</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer" id="contact" aria-labelledby="footer-brand">
+    <div class="container">
+      <div class="footer-top">
+        <div class="f-brand" id="footer-brand">
+          <a href="index.html" class="brand f-brand-logo" aria-label="Wellbeing Impact Foundation — Home">
+            <img src="assets/footer-logo-white.png?v=2" alt="Wellbeing Impact Foundation" class="f-logo-img" width="190" height="104" />
+          </a>
+          <p class="f-mission">
+            Empowering Every Life. Strengthening Every Community. Transforming Bangladesh.
+          </p>
+          <div class="f-badges">
+            <span>Evidence-Informed</span><span>People-Centred</span><span>Future-Focused</span>
+          </div>
+        </div>
+
+        <nav class="f-col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="about.html#who-we-are">Who We Are</a>
+          <a href="index.html#why-wellbeing">Why Wellbeing Matters</a>
+          <a href="framework.html">The Framework™</a>
+          <a href="index.html#focus">Focus Areas</a>
+          <a href="programmes.html">Flagship Programs</a>
+        </nav>
+
+        <nav class="f-col" aria-label="Get involved">
+          <h4>Get Involved</h4>
+          <a href="index.html#join">Join the Movement</a>
+          <a href="ecosystem.html">Partnerships</a>
+          <a href="index.html#support">Support Our Mission</a>
+          <a href="index.html#news">News &amp; Insights</a>
+          <a href="index.html#contact">Contact Us</a>
+        </nav>
+
+        <div class="f-col f-contact">
+          <h4>Contact</h4>
+          <address>
+            Wellbeing Bangladesh Foundation<br/>
+            Dhaka, Bangladesh
+          </address>
+          <a href="mailto:info@wellbeingbangladesh.org">info@wellbeingbangladesh.org</a>
+          <a href="tel:+8800000000000">+880 0000 000000</a>
+          <div class="socials" aria-label="Social media">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8V11H8v3h2.5v7h3Z" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 8.6H4V20h2.9V8.6ZM5.4 7.3a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4ZM20 13.4c0-3.2-1.7-4.7-4-4.7a3.5 3.5 0 0 0-3.1 1.7V8.6H10V20h2.9v-6c0-1.6.8-2.5 2.1-2.5s2 .9 2 2.5v6H20v-6.6Z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-quote">
+        <p>“When people are healthier, families become stronger. When families thrive, communities flourish. When communities flourish, nations prosper.”</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Wellbeing Bangladesh Foundation. All rights reserved.</p>
+        <p class="f-links"><a href="#">Privacy Policy</a><span aria-hidden="true">·</span><a href="#">Terms of Use</a><span aria-hidden="true">·</span><a href="#">Accessibility</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+      <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 20c.5-3.7 2.6-6 5.5-6s5 2.3 5.5 6M15.5 5.6a3.2 3.2 0 0 1 0 5.8M17.5 14.4c1.9.7 3 2.7 3.3 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5 14 9l6.5 2L14 13l-2 6.5L10 13l-6.5-2L10 9l2-6.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+      <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 9.6c0-2.8-1-4.6-2.7-4.6S7 6.8 8.6 8.4M14.4 12c2.8 0 4.6-1 4.6-2.7S16.2 7 15 8.6M12 14.4c0 2.8 1 4.6 2.7 4.6s2.3-1.8.7-3.4M9.6 12c-2.8 0-4.6 1-4.6 2.7s2.8 2.3 3.9.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-hands" viewBox="0 0 24 24"><path d="M7 11V5.8a1.4 1.4 0 0 1 2.8 0V11m0-6.4V3.5a1.4 1.4 0 0 1 2.8 0V11m0-6.6a1.4 1.4 0 0 1 2.8 0V12m0-4.5a1.4 1.4 0 0 1 2.8 0V15c0 3.6-2.6 6-6.2 6S6 18.6 6 15v-3l-1.6 1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 8V6.5A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5V8M3 13h18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <script src="main.js?v=18"></script>
+</body>
+</html>

@@ -8,9 +8,9 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Sticky header ---------- */
-  const header = document.getElementById('siteHeader');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  /* ---------- Sticky header — frosted glass past 50px ---------- */
+  const header = document.getElementById('siteHead' + 'er');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 50);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -257,5 +257,21 @@
     btnPrev.addEventListener('click', () => clearInterval(auto));
     btnNext.addEventListener('click', () => clearInterval(auto));
     if (userTouched) clearInterval(auto);
+  }
+  /* ---------- Vertical tabs (inner pages) ---------- */
+  const vtabs = document.querySelector('[data-vtabs]');
+  if (vtabs) {
+    const btns = vtabs.querySelectorAll('.vtab-btn');
+    const panels = vtabs.querySelectorAll('.vtab-panel');
+    btns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.tab;
+        btns.forEach((b) => {
+          b.classList.toggle('on', b === btn);
+          b.setAttribute('aria-selected', String(b === btn));
+        });
+        panels.forEach((p) => { p.hidden = p.dataset.panel !== id; });
+      });
+    });
   }
 })();
