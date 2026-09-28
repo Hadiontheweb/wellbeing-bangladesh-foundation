@@ -179,11 +179,12 @@ address { font-style: normal; }
 }
 
 /* ---------- Dark-hero pages: white nav while pill is transparent at top ---------- */
-.dark-hero .site-header:not(.scrolled) .main-nav a,
+/* (top-level links only — never dropdown links, which sit on white panels) */
+.dark-hero .site-header:not(.scrolled) .main-nav > a,
 .dark-hero .site-header:not(.scrolled) .nav-more > button {
   color: rgba(255,255,255,.95);
 }
-.dark-hero .site-header:not(.scrolled) .main-nav a:hover,
+.dark-hero .site-header:not(.scrolled) .main-nav > a:hover,
 .dark-hero .site-header:not(.scrolled) .nav-more > button:hover {
   background: rgba(255,255,255,.16);
   color: #fff;
@@ -923,6 +924,16 @@ address { font-style: normal; }
   .main-nav.open { opacity: 1; transform: none; pointer-events: auto; }
   .main-nav a, .nav-more > button { color: var(--slate); width: 100%; box-sizing: border-box; padding: 14px 18px; border-radius: 12px; text-transform: none; letter-spacing: 0; font-size: 1.05rem; }
   .main-nav a:hover { background: var(--green-50); color: var(--green-700); }
+  /* dark-hero pages: menu items must stay dark on the white mobile panel */
+  .dark-hero .site-header:not(.scrolled) .main-nav > a,
+  .dark-hero .site-header:not(.scrolled) .main-nav a,
+  .dark-hero .site-header:not(.scrolled) .nav-more > button {
+    color: var(--slate);
+  }
+  .dark-hero .site-header:not(.scrolled) .main-nav a:hover {
+    background: var(--green-50);
+    color: var(--green-700);
+  }
   .nav-drop {
     position: static; transform: none; opacity: 1; pointer-events: auto;
     display: none; min-width: 0; padding: 0 0 0 16px;
