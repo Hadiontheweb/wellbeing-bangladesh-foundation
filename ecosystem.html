@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=72" />
-  <link rel="stylesheet" href="pages.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=73" />
+  <link rel="stylesheet" href="pages.css?v=10" />
   <link rel="icon" type="image/png" href="assets/logo-round.png" />
 </head>
 <body>
@@ -55,7 +55,7 @@
     <!-- ======================= PAGE HERO ======================= -->
     <section class="page-hero" aria-label="Ecosystem introduction">
       <div class="page-hero-bg" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1603184618282-b5985c575b50?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1920&auto=format&fit=crop" alt="" fetchpriority="high" />
+        <img src="https://images.unsplash.com/photo-1603184618282-b5985c575b50?q=80&w=1920&auto=format&fit=crop" alt="" fetchpriority="high" />
       </div>
       <div class="page-hero-veil" aria-hidden="true"></div>
       <div class="container page-hero-inner">
@@ -97,92 +97,142 @@
       </div>
     </section>
 
-    <!-- ======================= INITIATIVES (tabs) ======================= -->
-    <section class="section band-soft" id="initiatives" aria-labelledby="init-title">
+    <!-- ======================= INITIATIVES (reference §3 — full-bleed slider) ======================= -->
+    <section class="section initiatives-head" id="initiatives-head" aria-labelledby="init-head-title">
       <div class="container">
         <header class="section-head centered reveal" data-reveal>
-          <p class="section-eyebrow">Within the Ecosystem</p>
-          <h2 class="section-title" id="init-title">A Growing Family of Initiatives</h2>
+          <p class="section-eyebrow">The Initiatives</p>
+          <h2 class="section-title" id="init-head-title">A Growing Family of <em>Initiatives</em></h2>
+          <p class="section-sub">
+            Six specialised programmes grow from the Foundation — each rooted in the Bangladesh Wellbeing
+            Framework™, each serving a different stage of life across the country.
+          </p>
         </header>
-
-        <div class="vtabs" data-vtabs>
-          <div class="vtab-list" role="tablist" aria-label="Ecosystem initiatives">
-            <button type="button" class="vtab-btn on" data-tab="schools" aria-selected="true"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>Healthy Schools</button>
-            <button type="button" class="vtab-btn" data-tab="campus" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg>Healthy Campus</button>
-            <button type="button" class="vtab-btn" data-tab="workplace" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg>Healthy Workplace</button>
-            <button type="button" class="vtab-btn" data-tab="community" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-people"/></svg>Community Wellness</button>
-            <button type="button" class="vtab-btn" data-tab="women" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-flower"/></svg>Women Wellness</button>
-            <button type="button" class="vtab-btn" data-tab="youth" aria-selected="false"><svg class="ic" aria-hidden="true"><use href="#i-hands"/></svg>Youth Leadership</button>
-          </div>
-
-          <div class="vtab-panels">
-            <div class="vtab-panel" data-panel="schools">
-              <h3>Healthy School Initiative</h3>
-              <p>
-                Creating healthier schools where children learn, play and grow in nurturing environments.
-                We partner with schools across Bangladesh to embed wellbeing into daily school life —
-                from mindful mornings to teacher training and family engagement.
-              </p>
-              <div class="vtag-row"><span>Wellbeing Curriculum</span><span>Teacher Training</span><span>Play &amp; Movement</span><span>Parent Workshops</span></div>
-            </div>
-            <div class="vtab-panel" data-panel="campus" hidden>
-              <h3>Healthy Campus Initiative</h3>
-              <p>
-                Empowering university students with wellbeing skills, peer support networks and healthy campus
-                cultures — preparing the next generation to lead lives of purpose, balance and contribution.
-              </p>
-              <div class="vtag-row"><span>Peer Support</span><span>Mental Health Awareness</span><span>Leadership Labs</span><span>Campus Partnerships</span></div>
-            </div>
-            <div class="vtab-panel" data-panel="workplace" hidden>
-              <h3>Healthy Workplace Bangladesh</h3>
-              <p>
-                Transforming workplaces into spaces of productivity, balance and professional wellbeing.
-                We work with employers to build people-first cultures where teams and businesses thrive together.
-              </p>
-              <div class="vtag-row"><span>Workplace Assessments</span><span>Manager Training</span><span>Wellbeing Policy</span><span>Employee Programmes</span></div>
-            </div>
-            <div class="vtab-panel" data-panel="community" hidden>
-              <h3>Community Wellness Initiative</h3>
-              <p>
-                Mobilizing communities to design and lead their own journeys toward wellbeing — through local
-                leaders, volunteer networks and community-owned programmes that last.
-              </p>
-              <div class="vtag-row"><span>Community Champions</span><span>Volunteer Corps</span><span>Local Partnerships</span><span>Grassroots Events</span></div>
-            </div>
-            <div class="vtab-panel" data-panel="women" hidden>
-              <h3>Women Wellness Initiative</h3>
-              <p>
-                Advancing women's health, dignity and empowerment across every stage of life — from adolescent
-                health education to maternal wellbeing and women's economic participation.
-              </p>
-              <div class="vtag-row"><span>Health Education</span><span>Maternal Wellbeing</span><span>Skill Building</span><span>Support Circles</span></div>
-            </div>
-            <div class="vtab-panel" data-panel="youth" hidden>
-              <h3>Youth Leadership Academy</h3>
-              <p>
-                Developing the next generation of purpose-driven, compassionate young leaders — equipped with
-                the skills, values and confidence to transform their communities.
-              </p>
-              <div class="vtag-row"><span>Leadership Training</span><span>Mentorship</span><span>Service Projects</span><span>National Network</span></div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- ======================= WHY AN ECOSYSTEM ======================= -->
+    <section class="eco-slider" id="initiatives" aria-label="Initiatives of the Foundation" data-eco-slider>
+      <div class="eco-stage">
+        <div class="eco-bg" data-eco-bg>
+          <img src="https://images.unsplash.com/photo-1631555567492-8ba42744b474?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1631555567492-8ba42744b474?q=80&w=800&auto=format&fit=crop" alt="" fetchpriority="high" />
+          <img src="https://images.unsplash.com/photo-1549630552-4cfaf858cb03?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1549630552-4cfaf858cb03?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1770196035129-0a0affd4a519?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1770196035129-0a0affd4a519?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1638653051755-6092c26c7f9c?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1638653051755-6092c26c7f9c?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1727344513672-220f20bef9c8?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1727344513672-220f20bef9c8?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1779903595032-4565c2e61cb3?q=80&w=1920&auto=format&fit=crop" data-card-src="https://images.unsplash.com/photo-1779903595032-4565c2e61cb3?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+        </div>
+        <div class="eco-vignette" aria-hidden="true"></div>
+        <div class="eco-content">
+          <div class="eco-copy">
+            <div class="eco-panel is-on" data-eco-panel>
+              <p class="eco-kicker">A Healthy Learning Movement</p>
+              <h3 class="eco-title">Healthy Schools</h3>
+              <p class="eco-tagline">Where wellbeing is part of every lesson</p>
+              <p class="eco-desc">Creating healthier schools where children learn, play and grow in nurturing environments. We partner with schools across Bangladesh to embed wellbeing into daily school life — from mindful mornings to teacher training and family engagement.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Healthy Schools →</a>
+            </div>
+            <div class="eco-panel" data-eco-panel hidden>
+              <p class="eco-kicker">A University Wellbeing Movement</p>
+              <h3 class="eco-title">Healthy Campus</h3>
+              <p class="eco-tagline">Preparing the next generation to lead with balance</p>
+              <p class="eco-desc">Empowering university students with wellbeing skills, peer support networks and healthy campus cultures — preparing the next generation to lead lives of purpose, balance and contribution.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Healthy Campus →</a>
+            </div>
+            <div class="eco-panel" data-eco-panel hidden>
+              <p class="eco-kicker">A People-First Workplace Movement</p>
+              <h3 class="eco-title">Healthy Workplace</h3>
+              <p class="eco-tagline">People-first cultures where teams thrive</p>
+              <p class="eco-desc">Transforming workplaces into spaces of productivity, balance and professional wellbeing. We work with employers to build people-first cultures where teams and businesses thrive together.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Healthy Workplace →</a>
+            </div>
+            <div class="eco-panel" data-eco-panel hidden>
+              <p class="eco-kicker">A Community-Led Wellbeing Movement</p>
+              <h3 class="eco-title">Community Wellness</h3>
+              <p class="eco-tagline">Communities leading their own change</p>
+              <p class="eco-desc">Mobilizing communities to design and lead their own journeys toward wellbeing — through local leaders, volunteer networks and community-owned programmes that last.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Community Wellness →</a>
+            </div>
+            <div class="eco-panel" data-eco-panel hidden>
+              <p class="eco-kicker">A Women's Health &amp; Dignity Movement</p>
+              <h3 class="eco-title">Women Wellness</h3>
+              <p class="eco-tagline">Health, dignity and empowerment for every woman</p>
+              <p class="eco-desc">Advancing women's health, dignity and empowerment across every stage of life — from adolescent health education to maternal wellbeing and women's economic participation.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Women Wellness →</a>
+            </div>
+            <div class="eco-panel" data-eco-panel hidden>
+              <p class="eco-kicker">A Purpose-Driven Youth Movement</p>
+              <h3 class="eco-title">Youth Leadership</h3>
+              <p class="eco-tagline">Raising purpose-driven young leaders</p>
+              <p class="eco-desc">Developing the next generation of purpose-driven, compassionate young leaders — equipped with the skills, values and confidence to transform their communities.</p>
+              <a class="btn btn-ghost-light eco-cta" href="programmes.html#areas">Explore Youth Leadership →</a>
+            </div>
+          </div>
+          <div class="eco-cards" data-eco-cards></div>
+        </div>
+      </div>
+      <div class="eco-controls">
+        <div class="eco-arrows">
+          <button type="button" class="eco-arrow" id="ecoPrev" aria-label="Previous initiative">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="eco-arrow" id="ecoNext" aria-label="Next initiative">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5.5 6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="eco-progress" aria-hidden="true"><span id="ecoBar"></span></div>
+        <p class="eco-counter"><span id="ecoNum">01</span><em>/ 06</em></p>
+      </div>
+    </section>
+
+    <!-- ======================= WHY AN ECOSYSTEM (alternating rows) ======================= -->
     <section class="section" id="why-ecosystem" aria-labelledby="whyeco-title">
       <div class="container">
         <header class="section-head centered reveal" data-reveal>
           <p class="section-eyebrow">Our Approach</p>
           <h2 class="section-title" id="whyeco-title">Why an Ecosystem?</h2>
         </header>
-        <ol class="num-grid">
-          <li class="num-item reveal" data-reveal><span class="num-num">01</span><h3>Specialisation</h3><p>Each initiative focuses on a specific domain — allowing depth, quality and cultural fit in every setting we serve.</p></li>
-          <li class="num-item reveal" data-reveal><span class="num-num">02</span><h3>Shared Standards</h3><p>Every initiative follows the Framework™, shared training and common measurement — so quality never depends on place.</p></li>
-          <li class="num-item reveal" data-reveal><span class="num-num">03</span><h3>Collaboration</h3><p>Initiatives refer, learn and build on one another — a school connects to a campus, a campus to workplaces, workplaces to communities.</p></li>
-          <li class="num-item reveal" data-reveal><span class="num-num">04</span><h3>Scale with Soul</h3><p>The ecosystem grows through partners and local leaders — reaching more of Bangladesh without losing the human touch.</p></li>
-        </ol>
+        <div class="alt-rows">
+          <div class="alt-row reveal" data-reveal>
+            <figure class="alt-media">
+              <img src="https://images.unsplash.com/photo-1647771733859-d07c37a08940?q=80&w=1000&auto=format&fit=crop" alt="A Bangladeshi farmer ploughing a paddy field with oxen" loading="lazy" />
+            </figure>
+            <div class="alt-copy">
+              <span class="alt-num">01</span>
+              <h3>Specialisation</h3>
+              <p>Each initiative focuses on a specific domain — allowing depth, quality and cultural fit in every setting we serve.</p>
+            </div>
+          </div>
+          <div class="alt-row reveal" data-reveal>
+            <figure class="alt-media">
+              <img src="https://images.unsplash.com/photo-1673537976977-c3ab1c61cecd?q=80&w=1000&auto=format&fit=crop" alt="Two people walking together along a village road in Bangladesh" loading="lazy" />
+            </figure>
+            <div class="alt-copy">
+              <span class="alt-num">02</span>
+              <h3>Shared Standards</h3>
+              <p>Every initiative follows the Framework™, shared training and common measurement — so quality never depends on place.</p>
+            </div>
+          </div>
+          <div class="alt-row reveal" data-reveal>
+            <figure class="alt-media">
+              <img src="https://images.unsplash.com/photo-1774963649176-234b3d7b3313?q=80&w=1000&auto=format&fit=crop" alt="Two men sitting together by a calm riverbank at dawn in Bangladesh" loading="lazy" />
+            </figure>
+            <div class="alt-copy">
+              <span class="alt-num">03</span>
+              <h3>Collaboration</h3>
+              <p>Initiatives refer, learn and build on one another — a school connects to a campus, a campus to workplaces, workplaces to communities.</p>
+            </div>
+          </div>
+          <div class="alt-row reveal" data-reveal>
+            <figure class="alt-media">
+              <img src="https://images.unsplash.com/photo-1642062659982-c66c760bc318?q=80&w=1000&auto=format&fit=crop" alt="A young boy standing at the edge of a green forest in Bangladesh" loading="lazy" />
+            </figure>
+            <div class="alt-copy">
+              <span class="alt-num">04</span>
+              <h3>Scale with Soul</h3>
+              <p>The ecosystem grows through partners and local leaders — reaching more of Bangladesh without losing the human touch.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -279,6 +329,6 @@
     </defs>
   </svg>
 
-  <script src="main.js?v=20"></script>
+  <script src="main.js?v=29"></script>
 </body>
 </html>

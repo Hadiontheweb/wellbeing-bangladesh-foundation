@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=72" />
-  <link rel="stylesheet" href="pages.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=73" />
+  <link rel="stylesheet" href="pages.css?v=10" />
   <link rel="icon" type="image/png" href="assets/logo-round.png" />
 </head>
 <body>
@@ -71,7 +71,7 @@
     </section>
 
     <!-- ======================= PHILOSOPHY OF STEWARDSHIP ======================= -->
-    <section class="section quote-band" id="philosophy" aria-labelledby="philo-title">
+    <section class="section quote-band" id="philosophy" aria-labelledby="philo-title" data-photo="">
       <div class="container reveal" data-reveal>
         <header class="section-head centered">
           <p class="section-eyebrow">Our Philosophy</p>
@@ -102,35 +102,48 @@
             and community we serve.
           </p>
         </header>
-        <ul class="person-grid">
-          <li class="person-card reveal" data-reveal>
-            <span class="person-media"><img src="https://images.unsplash.com/photo-1682786308110-fab1fe5e9446?auto=format&fit=crop&w=900&q=75" alt="The Founder guiding a group of young people" loading="lazy" /></span>
-            <div class="person-body">
-              <p class="person-loc">Bangladesh</p>
-              <h3>Founder &amp; Chairman</h3>
-              <p class="person-role">Stewardship: Vision · Purpose · Institutional Integrity</p>
-              <p>Guards the founding purpose of the Foundation and ensures every initiative remains aligned with the national wellbeing mission.</p>
+        <div class="stew-slider" data-stew-slider>
+          <div class="stew-viewport">
+            <div class="stew-track">
+              <article class="stew-slide">
+                <img src="https://images.unsplash.com/photo-1758336011136-343678e4fc05?q=80&w=1600&auto=format&fit=crop" alt="A smiling Bangladeshi leader in traditional attire" loading="lazy" />
+                <div class="stew-shade" aria-hidden="true"></div>
+                <div class="stew-copy">
+                  <p class="stew-loc">Bangladesh</p>
+                  <h3>Founder &amp; Chairman</h3>
+                  <p class="stew-role">Stewardship: Vision · Purpose · Institutional Integrity</p>
+                  <p class="stew-desc">Guards the founding purpose of the Foundation and ensures every initiative remains aligned with the national wellbeing mission.</p>
+                </div>
+              </article>
+              <article class="stew-slide">
+                <img src="https://images.unsplash.com/photo-1757700314590-0ea0f33541f1?q=80&w=1600&auto=format&fit=crop" alt="Community members gathered at a programme event in Bangladesh" loading="lazy" />
+                <div class="stew-shade" aria-hidden="true"></div>
+                <div class="stew-copy">
+                  <p class="stew-loc">Bangladesh</p>
+                  <h3>Executive Director</h3>
+                  <p class="stew-role">Stewardship: Programmes · Operations · People</p>
+                  <p class="stew-desc">Leads the delivery of programmes across the country — turning strategy into measurable impact for families and communities.</p>
+                </div>
+              </article>
+              <article class="stew-slide">
+                <img src="https://images.unsplash.com/photo-1722932620084-8f308ab8ee9a?q=80&w=1600&auto=format&fit=crop" alt="Community leaders standing together in Bangladesh" loading="lazy" />
+                <div class="stew-shade" aria-hidden="true"></div>
+                <div class="stew-copy">
+                  <p class="stew-loc">Bangladesh</p>
+                  <h3>Advisory Council</h3>
+                  <p class="stew-role">Stewardship: Wisdom · Ethics · Guidance</p>
+                  <p class="stew-desc">Educators, health experts, researchers and community leaders who advise the Foundation with evidence and lived experience.</p>
+                </div>
+              </article>
             </div>
-          </li>
-          <li class="person-card reveal" data-reveal>
-            <span class="person-media"><img src="https://images.unsplash.com/photo-1698047181077-d77608c3f85b?auto=format&fit=crop&w=900&q=75" alt="An executive leader smiling during community work" loading="lazy" /></span>
-            <div class="person-body">
-              <p class="person-loc">Bangladesh</p>
-              <h3>Executive Director</h3>
-              <p class="person-role">Stewardship: Programmes · Operations · People</p>
-              <p>Leads the delivery of programmes across the country — turning strategy into measurable impact for families and communities.</p>
-            </div>
-          </li>
-          <li class="person-card reveal" data-reveal>
-            <span class="person-media"><img src="https://images.unsplash.com/photo-1528726164383-33c4a223b78c?auto=format&fit=crop&w=900&q=75" alt="An advisor engaging with families in the community" loading="lazy" /></span>
-            <div class="person-body">
-              <p class="person-loc">Bangladesh</p>
-              <h3>Advisory Council</h3>
-              <p class="person-role">Stewardship: Wisdom · Ethics · Guidance</p>
-              <p>Educators, health experts, researchers and community leaders who advise the Foundation with evidence and lived experience.</p>
-            </div>
-          </li>
-        </ul>
+          </div>
+          <button type="button" class="stew-arrow stew-prev" data-stew-prev aria-label="Previous steward">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="stew-arrow stew-next" data-stew-next aria-label="Next steward">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5.5 6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
         <p class="center reveal" data-reveal style="margin-top:26px;color:var(--muted);font-size:.88rem">
           Detailed profiles and photographs of our leadership team will be published here.
         </p>
@@ -244,6 +257,6 @@
     </defs>
   </svg>
 
-  <script src="main.js?v=20"></script>
+  <script src="main.js?v=29"></script>
 </body>
 </html>
